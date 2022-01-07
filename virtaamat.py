@@ -32,6 +32,8 @@ paikka_options = [{'label': i, 'value': i} for i in virtaamat[
 
 app = dash.Dash()
 
+server = app.server
+
 app.layout = html.Div([
     html.H1('Virtaamat'),
     html.P(['Tämä dashboard näyttää virtaamat.',
